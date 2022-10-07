@@ -1,0 +1,19 @@
+package com.app.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.app.config.AppConfig;
+import com.app.lokesh.Sample;
+
+public class Test {
+	public static void main(String[] args) {
+		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+		
+		Sample sampleOne = context.getBean("sample",Sample.class);
+		System.out.println(sampleOne.hashCode());
+		
+		Sample sampleTwo= context.getBean("sample",Sample.class);
+		System.out.println(sampleTwo.hashCode());
+	}
+}

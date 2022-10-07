@@ -1,0 +1,25 @@
+package com.app.lokesh;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Product {
+	// dependencies
+	@Value("10012")
+	private Integer pid;
+	@Value("mobile")
+	private String name;
+
+//default constructor
+	public Product() {
+		super();
+	}
+
+//toString(-)
+	@Override
+	public String toString() {
+		return "Product [pid=" + pid + ", name=" + name + "]";
+	}
+
+}

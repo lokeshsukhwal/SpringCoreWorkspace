@@ -1,0 +1,47 @@
+package com.app.lokesh;
+
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
+public class DataExport {
+	private String mode;
+	private String fileName;
+
+	public DataExport() {
+		super();
+		System.out.println("default constructor");
+	}
+
+	@PostConstruct
+	public void setData() {
+		System.out.println("from inInt(-) method");
+	}
+
+	@PreDestroy
+	public void clean() {
+		System.out.println("from destroy(-) method [Force object to delete from Memory/Container]");
+	}
+
+	public String getMode() {
+		return mode;
+	}
+
+	public void setMode(String mode) {
+		this.mode = mode;
+		System.out.println("from settter(-) method [injection is done]");
+	}
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+
+	@Override
+	public String toString() {
+		return "DataExport [mode=" + mode + ", fileName=" + fileName + "]";
+	}
+
+}

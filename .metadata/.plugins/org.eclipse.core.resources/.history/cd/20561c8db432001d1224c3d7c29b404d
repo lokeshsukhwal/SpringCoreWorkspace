@@ -1,0 +1,13 @@
+package com.app.lokesh;
+
+public class EmpServiceImpl implements IEmpService {
+	IEmpDao dao;
+
+	@Override
+	public void checkLogic() {
+		dao.save();
+		System.out.println("using checkLogic method called save method");	
+		System.out.println("from EmpServiceImpl class");
+	}
+
+}

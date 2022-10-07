@@ -1,0 +1,20 @@
+package com.app.lokesh;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Test {
+	public static void main(String[] args) {
+		System.out.println("before container creation........!");
+		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+		System.out.println("after container creation........!");
+		
+		System.out.println("reading and printing object from container........!");
+		
+		Token token1 = context.getBean("token", Token.class);
+		System.out.println(token1.hashCode());
+		
+		Token token2 = context.getBean("token", Token.class);
+		System.out.println(token2.hashCode());
+	}
+}

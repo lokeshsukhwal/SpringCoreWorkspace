@@ -1,0 +1,14 @@
+package com.app.lokesh.config;
+
+import org.springframework.context.annotation.Configuration;
+
+import com.app.lokesh.DatabaseCon;
+
+@Configuration
+public class AppConfig {
+	public DatabaseCon con() {
+		DatabaseCon con = new DatabaseCon();
+		con.setDriver("oracle");
+		con.setUrl("jdbc:oracle");
+	}
+}

@@ -1,0 +1,18 @@
+package com.app.lokesh;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class EmpServiceImpl implements IEmpService {
+	@Autowired
+	IEmpDao dao;
+
+	@Override
+	public void checkLogic() {
+		dao.save();
+		System.out.println(" from save method");	
+		System.out.println("FROM EMPSERVICEIMPL CLASS");
+	}
+
+}

@@ -1,0 +1,10 @@
+package com.app.test;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.app.config.AppConfig;
+
+public class Test {
+	AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
+	context.getBean
+}

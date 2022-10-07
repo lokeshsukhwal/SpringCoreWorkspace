@@ -1,0 +1,33 @@
+package com.app.lokesh;
+
+public class Human {
+	// modern human dependencies
+	private String food;
+	private String shelter;
+	private String money;
+
+	// default constructor
+	public Human() {
+		super();
+	}
+	// setter methods
+
+	public void setFood(String food) {
+		this.food = food;
+	}
+
+	public void setShelter(String shelter) {
+		this.shelter = shelter;
+	}
+
+	public void setMoney(String money) {
+		this.money = money;
+	}
+	// toString method
+
+	@Override
+	public String toString() {
+		return "Human [food=" + food + ", shelter=" + shelter + ", money=" + money + "]";
+	}
+
+}

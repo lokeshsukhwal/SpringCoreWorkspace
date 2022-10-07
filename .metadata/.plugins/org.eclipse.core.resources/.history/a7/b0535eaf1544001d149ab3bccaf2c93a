@@ -1,0 +1,10 @@
+package com.app.lokesh;
+
+public class Product {
+	// dependencies
+	private Integer pid;
+	private String name;
+	private String color;
+
+	
+}

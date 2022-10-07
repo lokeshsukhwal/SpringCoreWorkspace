@@ -1,0 +1,33 @@
+package com.app.lokesh;
+
+public class Human {
+	// modern human dependencies
+	private String food;
+	private String internate;
+	private String mobile;
+	
+	//default constructor
+	public Human() {
+		super();
+	}
+	//setter methods
+	public void setFood(String food) {
+		this.food = food;
+	}
+	public void setInternate(String internate) {
+		this.internate = internate;
+	}
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+	//toString method
+	@Override
+	public String toString() {
+		return "Human [food=" + food + ", internate=" + internate + ", mobile=" + mobile + "]";
+	}
+	
+	
+	
+	
+
+}

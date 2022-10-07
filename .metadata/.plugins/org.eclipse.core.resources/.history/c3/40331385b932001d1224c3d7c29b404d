@@ -1,0 +1,16 @@
+package com.app.lokesh;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
+public class EmpController {
+	@Autowired
+	IEmpService sob;
+	
+	public void getInfo() {
+		sob.checkLogic();
+		System.out.println("from getInfo method ----EmpController class");
+		System.out.println("FROM EMPCONTROLLER CLASS");
+	}
+}

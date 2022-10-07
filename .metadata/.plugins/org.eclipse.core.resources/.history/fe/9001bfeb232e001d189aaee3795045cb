@@ -1,0 +1,15 @@
+package com.app.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.app.config.MyConfig;
+import com.app.connection.MyConnection;
+
+public class Test {
+public static void main(String[] args) {
+	ApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
+	MyConnection con = context.getBean("connection",MyConnection.class);
+	System.out.println(con);
+}
+}

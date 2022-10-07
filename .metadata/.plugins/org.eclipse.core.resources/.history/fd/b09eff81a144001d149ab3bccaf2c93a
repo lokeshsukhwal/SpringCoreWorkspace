@@ -1,0 +1,35 @@
+package com.app.lokesh;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class EmailConfiguration {
+	private Integer port;
+	private String host;
+
+	public EmailConfiguration() {
+		super();
+	}
+
+	public Integer getPort() {
+		return port;
+	}
+
+	public void setPort(Integer port) {
+		this.port = port;
+	}
+
+	public String getHost() {
+		return host;
+	}
+
+	public void setHost(String host) {
+		this.host = host;
+	}
+
+	@Override
+	public String toString() {
+		return "EmailConfiguration [port=" + port + ", host=" + host + "]";
+	}
+
+}

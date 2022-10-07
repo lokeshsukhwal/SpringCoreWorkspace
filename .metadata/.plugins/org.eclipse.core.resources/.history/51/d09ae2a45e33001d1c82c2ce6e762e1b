@@ -1,0 +1,33 @@
+package com.app.lokesh;
+
+import java.util.Arrays;
+import java.util.stream.Stream;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Progress {
+//	@Value("#{5+8}")
+//	@Value("#{'Hello lokesh'.length()}")
+//	@Value("#{new java.util.Random().nextInt()}")
+//	@Value("#{T(java.lang.Math).abs(new java.util.Random().nextInt())}")
+//	@Value("#{modelData.name.getBytes()}")
+//	@Value("#{modelData.name.toCharArray()}")
+	@Value("#{modelData.name.lines()}")
+
+	private Stream<String> test;
+//	private char[] array;
+//	private byte[] data;
+//	private int code;
+
+	public Progress() {
+		System.out.println("progress default constr");
+	}
+
+	@Override
+	public String toString() {
+		return "Progress [test=" + test + "]";
+	}
+
+}

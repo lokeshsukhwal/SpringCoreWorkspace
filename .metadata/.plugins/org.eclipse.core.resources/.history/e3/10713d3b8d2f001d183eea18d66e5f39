@@ -1,0 +1,21 @@
+package com.app.test;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import com.app.config.AppConfig;
+import com.app.lokesh.Sample;
+
+public class Test {
+	public static void main(String[] args) {
+		System.out.println("Before Container creation");
+		ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+		System.out.println("After Container creation");
+		Sample sampleOne = context.getBean("sampleObject",Sample.class);
+		System.out.println("reading the object");
+		System.out.println(sampleOne.hashCode());
+		
+		Sample sampleTwo= context.getBean("sampleObject",Sample.class);
+		System.out.println(sampleTwo.hashCode());
+	}
+}

@@ -1,0 +1,6 @@
+package com.app.lokesh;
+
+public class MyRepository {
+	private String code;
+
+}

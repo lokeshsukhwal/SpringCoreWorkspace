@@ -1,0 +1,11 @@
+package com.app.lokesh;
+
+public class EmpController {
+	IEmpService sob;
+	
+	public void getInfo() {
+		sob.checkLogic();
+		System.out.println("using getInfo method i called checkLogic mehtod");
+		System.out.println("from EmpController class");
+	}
+}

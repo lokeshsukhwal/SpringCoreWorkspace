@@ -1,0 +1,19 @@
+package com.app.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
+
+import com.app.connection.MyConnection;
+
+@Configuration
+@PropertySource("classpath:config.properties")
+public class MyConfig {
+	@Bean
+	public MyConnection con() {
+		MyConnection connection  = new MyConnection();
+		connection.setCode("samepleCode");
+		connection.setName("samepleName");
+		return connection;
+	}
+}

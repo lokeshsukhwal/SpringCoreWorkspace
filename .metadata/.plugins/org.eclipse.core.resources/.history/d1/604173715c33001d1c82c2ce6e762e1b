@@ -1,0 +1,23 @@
+package com.app.lokesh;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Progress {
+//	@Value("#{5+8}")
+//	@Value("#{'Hello lokesh'.length()}")
+//	@Value("#{new java.util.Random().nextInt()}")
+	@Value("#{T(java.lang.Math).abs(new java.util.Random().nextInt())}")
+	private int code;
+
+	public Progress() {
+		System.out.println("progress default constr");
+	}
+
+	@Override
+	public String toString() {
+		return "Process [code=" + code + "]";
+	}
+
+}

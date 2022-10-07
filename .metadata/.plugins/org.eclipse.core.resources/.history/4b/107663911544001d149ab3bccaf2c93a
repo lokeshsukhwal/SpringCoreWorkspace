@@ -1,0 +1,19 @@
+package com.app.lokesh;
+
+public class Product {
+	// dependencies
+	private Integer pid;
+	private String name;
+	private String color;
+
+	// default constructor
+	
+	public Product() {
+		super();
+	}
+	// setter methods
+
+	
+	// toString method
+
+}

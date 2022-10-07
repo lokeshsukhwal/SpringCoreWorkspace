@@ -1,0 +1,30 @@
+package com.app;
+
+public class OracleCon {
+	//Declare variable
+	private String driver;
+	private String url;
+	//default constructor
+	public OracleCon() {
+		super();
+	}
+	//setter and getters
+	public String getDriver() {
+		return driver;
+	}
+	public void setDriver(String driver) {
+		this.driver = driver;
+	}
+	public String getUrl() {
+		return url;
+	}
+	public void setUrl(String url) {
+		this.url = url;
+	}
+	//override the toString method
+	@Override
+	public String toString() {
+		return "OracleCon [driver=" + driver + ", url=" + url + "]";
+	}
+	
+}

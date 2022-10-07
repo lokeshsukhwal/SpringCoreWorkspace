@@ -1,0 +1,26 @@
+package com.app.lokesh;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Token {
+	private Integer code;
+
+	public Token() {
+		super();
+	}
+
+	public Integer getCode() {
+		return code;
+	}
+
+	public void setCode(Integer code) {
+		this.code = code;
+	}
+
+	@Override
+	public String toString() {
+		return "Token [code=" + code + "]";
+	}
+
+}

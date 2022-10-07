@@ -1,0 +1,10 @@
+package com.app.lokesh;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class ModelData {
+	@Value("TEST")
+	private String name;
+}

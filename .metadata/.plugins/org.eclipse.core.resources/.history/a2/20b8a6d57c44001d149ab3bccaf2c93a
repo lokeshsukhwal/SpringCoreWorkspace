@@ -1,0 +1,19 @@
+package com.app.lokesh;
+
+public class Service {
+	private Repository repository;
+
+	public Service(Repository repository) {
+		super();
+		this.repository = repository;
+	}
+
+	public void setRepository(Repository repository) {
+		this.repository = repository;
+	}
+	@Override
+	public String toString() {
+		return "Service [repository=" + repository + "]";
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.app.lokesh;
+
+public class DataExport {
+	private String mode;
+	private String fileName;
+
+	public DataExport() {
+		super();
+		System.out.println("default constructor");
+	}
+
+	public void setData() {
+		System.out.println("from inInt(-) method");
+	}
+
+	public void clean() {
+		System.out.println("from destroy(-) method");
+	}
+
+	@Override
+	public String toString() {
+		return "DataExport [mode=" + mode + ", fileName=" + fileName + "]";
+	}
+
+}

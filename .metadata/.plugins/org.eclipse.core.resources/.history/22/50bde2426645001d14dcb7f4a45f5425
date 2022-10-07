@@ -1,0 +1,24 @@
+package com.app.lokesh;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan(basePackages = "com.app.lokesh")
+public class AppConfig {
+	@Bean
+	public MyRepository m1() {
+		MyRepository m1 = new MyRepository();
+		m1.setCode("CODE");
+		return m1;
+	}
+	
+	@Bean
+	public MyRepository m2() {
+		MyRepository m2 = new MyRepository();
+		m2.setCode("CODE");
+		return m2;
+	}
+
+}

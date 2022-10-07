@@ -1,0 +1,36 @@
+package com.app.lokesh;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Employee {
+	private Integer eid;
+	private String ename;
+
+	public Employee() {
+		super();
+	}
+
+	public Integer getEid() {
+		return eid;
+	}
+
+	public void setEid(Integer eid) {
+		this.eid = eid;
+	}
+
+	public String getEname() {
+		return ename;
+	}
+
+	public void setEname(String ename) {
+		this.ename = ename;
+	}
+
+	@Override
+	public String toString() {
+		return "Employee [eid=" + eid + ", ename=" + ename + "]";
+	}
+
+}

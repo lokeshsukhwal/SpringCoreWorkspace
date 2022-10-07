@@ -1,0 +1,16 @@
+package com.app.lokesh;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class Test {
+	public static void main(String[] args) {
+		ApplicationContext context = new ClassPathXmlApplicationContext	("beans.xml");
+		Token tokenOne = context.getBean("token", Token.class);
+		System.out.println(tokenOne.hashCode());
+		
+		Token token2 = context.getBean("token", Token.class);
+		System.out.println(token2.hashCode());
+		
+	}
+}

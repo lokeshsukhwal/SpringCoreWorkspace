@@ -1,0 +1,15 @@
+package com.app.lokesh;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+
+@ComponentScan(basePackages = "com.app.lokesh")
+public class AppConfig {
+	@Bean
+	public Token token() {
+		Token token = new Token();
+		token.setCode(50);
+		return token;
+	}
+
+}

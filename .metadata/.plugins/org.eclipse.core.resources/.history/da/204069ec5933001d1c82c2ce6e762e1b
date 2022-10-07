@@ -1,0 +1,9 @@
+package com.app.lokesh;
+
+public class Process {
+	private int code;
+
+	public Process() {
+		System.out.println("process default constr");
+	}
+}

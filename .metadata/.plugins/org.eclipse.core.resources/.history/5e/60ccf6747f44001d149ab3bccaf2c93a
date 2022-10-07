@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean id="repositoryObject" class="com.app.lokesh.Repository">
+		<property name="entity" value="SAMPLE" />
+	</bean>
+	<bean id="serviceObject" class="com.app.lokesh.Service">
+		<property name="repository" ref="repositoryObject" />
+	</bean>
+	<bean id="coltrollerObject" class="com.app.lokesh.Controller">
+		<property name="service" ref="serviceObject" />
+	</bean>
+</beans>

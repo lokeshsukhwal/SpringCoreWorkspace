@@ -1,0 +1,17 @@
+package com.app.config;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+import com.app.lokesh.Sample;
+
+@ComponentScan(basePackages = "com.app")
+//@Configuration
+public class AppConfig {
+	public Sample sample() {
+		Sample sampleOne = new Sample();
+		sampleOne.setCode(10);
+		return sampleOne;
+	}
+
+}

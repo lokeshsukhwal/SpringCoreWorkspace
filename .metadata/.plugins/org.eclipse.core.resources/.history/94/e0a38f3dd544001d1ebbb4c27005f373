@@ -1,0 +1,10 @@
+package com.app.lokesh.service;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Service {
+	@Value("entityValue")
+	private String entity;
+}

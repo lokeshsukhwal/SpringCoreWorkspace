@@ -1,0 +1,44 @@
+/*in spring we have 4 scope
+1) singleton : (default/longest)
+							(create one object per configuration)
+2) prototype : create new object on every access from container
+3) request : [spring-web]
+						(create object on request and maintain until response)
+4) Session : [spring-web]
+						(on login user (per person) create object and destroy on logout)
+*/
+package com.app.lokesh;
+
+import java.util.Random;
+
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
+
+@Component
+//@Scope("prototype")
+public class Token {
+	private int code;
+
+	// default constructor
+	public Token() {
+		super();
+		System.out.println("constructor is called............!");
+		code = Math.abs(new Random().nextInt());
+	}
+
+	// setter and getter
+	public int getCode() {
+		return code;
+	}
+
+	public void setCode(int code) {
+		this.code = code;
+	}
+
+	// toString(-)
+	@Override
+	public String toString() {
+		return "Token [code=" + code + "]";
+	}
+
+}

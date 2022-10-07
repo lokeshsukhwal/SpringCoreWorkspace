@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+	<bean id="employee" class="com.app.lokesh.Employee">
+		<property name="eid" value="101" />
+		<property name="ename" value="lokesh" />
+	</bean>
+	<bean id="department" class="com.app.lokesh.Department">
+		<property name="deptName" value="Development" />
+		<property name="employees">
+			<list>
+				<value></value>
+			</list>
+		</property>
+	</bean>
+</beans>

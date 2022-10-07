@@ -1,0 +1,13 @@
+package com.app.lokesh;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class Process {
+	@Va
+	private int code;
+
+	public Process() {
+		System.out.println("process default constr");
+	}
+}

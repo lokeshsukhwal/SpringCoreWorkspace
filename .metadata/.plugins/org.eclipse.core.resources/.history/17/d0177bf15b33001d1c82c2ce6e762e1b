@@ -1,0 +1,21 @@
+package com.app.lokesh;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component
+public class Progress {
+//	@Value("#{5+8}")
+	@Value("#{'Hello lokesh'.length()}")
+	private int code;
+
+	public Progress() {
+		System.out.println("progress default constr");
+	}
+
+	@Override
+	public String toString() {
+		return "Process [code=" + code + "]";
+	}
+
+}
